@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">15MinFitness</string>
+    <string name="App_name">15MinFitness</string>
+    <string name="mainButton1">Start a workout!</string>
+    <string name="mainButton2">Get some body stats!</string>
+    <string name="bodyStats">Body Stats</string>
+    <string name="bodyStatsMessage">Get personalized body stats!</string>
+    <string name="enterHeight">Enter height(in cm):</string>
+    <string name="Height">Height</string>
+    <string name="enterWeight">Enter weight(in kg):</string>
+    <string name="Weight">Weight</string>
+    <string name="getBodyStatsButton">Get body stats!</string>
+    <string name="bodyResults">Body statistics:</string>
+    <string name="back">x</string>
+    <string name="yourBMI">Your BMI(Body Mass Index):</string>
+    <string name="yourProtein">Minimal protein grams per day:</string>
+    <string name="minimalWater">Minimal water liters per day:</string>
+    <string name="startWorkout">Start a workout!</string>
+    <string name="startWorkoutMessage">Check out these recommended exercises!</string>
+    <string name="stretchingButton">Stretching</string>
+    <string name="bodyweightButton">Bodyweight exercises</string>
+    <string name="all">All</string>
+    <string name="push">Push</string>
+    <string name="fullbody">Full Body</string>
+    <string name="legs">Legs</string>
+    <string name="pull">Pull</string>
+    <string name="core">Core</string>
+</resources>

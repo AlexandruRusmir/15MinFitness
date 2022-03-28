@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BodyweightActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_button5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="345dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_btn_bg"
+            android:onClick="legsFilterTapped"
+            android:text="x"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exerciseListView"
+        android:iconifiedByDefault="false"
+        android:queryHint="Exercise Name"></SearchView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/all"
+            android:fontFamily="@font/biorhyme"
+            android:background="@drawable/filter_btn_bg"
+            android:layout_margin="4dp"
+            android:id="@+id/allFilter"
+            android:onClick="allFilterTapped"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/fullbody"
+            android:fontFamily="@font/biorhyme"
+            android:layout_margin="4dp"
+            android:background="@drawable/filter_btn_bg"
+            android:id="@+id/fullbodyFilter"
+            android:onClick="fullBodyFilterTapped"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/push"
+            android:fontFamily="@font/biorhyme"
+            android:layout_margin="4dp"
+            android:background="@drawable/filter_btn_bg"
+            android:id="@+id/fpushFilter"
+            android:onClick="pushFilterTapped"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/pull"
+            android:fontFamily="@font/biorhyme"
+            android:layout_margin="4dp"
+            android:background="@drawable/filter_btn_bg"
+            android:id="@+id/pullFilter"
+            android:onClick="pullFilterTapped"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/legs"
+            android:fontFamily="@font/biorhyme"
+            android:layout_margin="4dp"
+            android:background="@drawable/filter_btn_bg"
+            android:id="@+id/legsFilter"
+            android:onClick="legsFilterTapped"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/core"
+            android:background="@drawable/filter_btn_bg"
+            android:fontFamily="@font/biorhyme"
+            android:layout_margin="4dp"
+            android:id="@+id/coreFilter"
+            android:onClick="coreFilterTapped"/>
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/listview_look"
+        android:id="@+id/exercisesListView"/>
+
+</LinearLayout>
