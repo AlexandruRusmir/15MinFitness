@@ -30,4 +30,5 @@
     <string name="yourWorkoutTitle">Your workout!</string>
     <string name="emptyWorkoutList">Empty the list</string>
     <string name="startYourWorkout">Start your workout!</string>
+    <string name="BreakText">Break time!</string>
 </resources>

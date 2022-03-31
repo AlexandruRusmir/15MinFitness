@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -17,7 +18,7 @@ public class WorkoutExercisesListActivity extends AppCompatActivity {
     private Button backButton;
     private Button emptyListButtton;
     private Button startWorkout;
-    private ListView listView;
+    public static ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +51,10 @@ public class WorkoutExercisesListActivity extends AppCompatActivity {
         startWorkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Exercise exercise = (Exercise) (listView.getItemAtPosition(0));
+                Intent showDetail = new Intent(getApplicationContext(), CurrentWorkingExerciseActivity.class);
+                showDetail.putExtra("id",exercise.getId());
+                startActivity(showDetail);
             }
         });
 
@@ -61,7 +65,6 @@ public class WorkoutExercisesListActivity extends AppCompatActivity {
 
     private void setUpList() {
         listView = (ListView) findViewById(R.id.selectedExercisesListView);
-
         ExerciseAdapter adapter = new ExerciseAdapter(getApplicationContext(), 0, exercises);
         listView.setAdapter(adapter);
     }
@@ -76,6 +79,5 @@ public class WorkoutExercisesListActivity extends AppCompatActivity {
                 startActivity(showDetail);
             }
         });
-
     }
 }
