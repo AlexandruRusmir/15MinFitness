@@ -22,7 +22,7 @@ public class ExerciseAdapter extends ArrayAdapter<Exercise> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Exercise shape = getItem(position);
+        Exercise exercise = getItem(position);
 
         if(convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.exercise_cell, parent, false);
@@ -30,8 +30,8 @@ public class ExerciseAdapter extends ArrayAdapter<Exercise> {
         TextView textview = (TextView) convertView.findViewById(R.id.exerciseName);
         ImageView imgview = (ImageView) convertView.findViewById(R.id.exerciseImage);
 
-        textview.setText(shape.getName());
-        imgview.setImageResource(shape.getImage());
+        textview.setText(exercise.getName());
+        imgview.setImageResource(exercise.getImage());
 
         return convertView;
     }

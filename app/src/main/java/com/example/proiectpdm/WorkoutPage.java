@@ -9,7 +9,11 @@ import android.widget.Button;
 
 public class WorkoutPage extends AppCompatActivity {
 
-    private Button backButton, stretchButton, bodyweightButton;
+    private Button backButton;
+    private Button stretchButton;
+    private Button bodyweightButton;
+    private Button dumbbelButton;
+    private Button startYourWorkoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,24 @@ public class WorkoutPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(WorkoutPage.this, BodyweightActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        dumbbelButton = findViewById(R.id.dumbbellButton);
+        dumbbelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(WorkoutPage.this, DumbbellActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        startYourWorkoutButton = findViewById(R.id.startWorkoutButton);
+        startYourWorkoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(WorkoutPage.this, WorkoutExercisesListActivity.class);
                 startActivity(intent);
             }
         });

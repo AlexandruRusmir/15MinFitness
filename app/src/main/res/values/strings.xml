@@ -17,12 +17,17 @@
     <string name="minimalWater">Minimal water liters per day:</string>
     <string name="startWorkout">Start a workout!</string>
     <string name="startWorkoutMessage">Check out these recommended exercises!</string>
-    <string name="stretchingButton">Stretching</string>
+    <string name="stretchingButton">Post-workout Stretching</string>
     <string name="bodyweightButton">Bodyweight exercises</string>
+    <string name="dumbbellButton">Dumbbell exercises</string>
     <string name="all">All</string>
     <string name="push">Push</string>
     <string name="fullbody">Full Body</string>
     <string name="legs">Legs</string>
     <string name="pull">Pull</string>
     <string name="core">Core</string>
+    <string name="addToWorkout">Add to your workout!</string>
+    <string name="yourWorkoutTitle">Your workout!</string>
+    <string name="emptyWorkoutList">Empty the list</string>
+    <string name="startYourWorkout">Start your workout!</string>
 </resources>

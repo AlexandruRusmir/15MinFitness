@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProiectPDM">
         <activity
+            android:name=".WorkoutListDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutExercisesListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DumbbellDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DumbbellActivity"
+            android:exported="false" />
+        <activity
             android:name=".BodyweightDetailActivity"
             android:exported="false" />
         <activity

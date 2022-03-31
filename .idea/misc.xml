@@ -4,22 +4,29 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.219" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/drawable/add_to_workout_btn.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/drawable/btn_bg.xml" value="0.226" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/drawable/cancel_btn_bg.xml" value="0.245" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/drawable/custom_input.xml" value="0.219" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/drawable/filter_btn_bg.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/drawable/ic_launcher_background.xml" value="0.219" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/drawable/listview_look.xml" value="0.1745" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/drawable/stretching_btn.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_beginner.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_body_stats.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_bodyweight.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_bodyweight_detail.xml" value="0.12158054711246201" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_detail.xml" value="0.2077922077922078" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_dumbbell.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_dumbbell_detail.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_strecth.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_stretch.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_workout_exercises_list.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_workout_list_detail.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/activity_workout_page.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/exercise_cell.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ProiectPDM/app/src/main/res/layout/toast_layout.xml" value="0.536" />
       </map>
     </option>
   </component>
