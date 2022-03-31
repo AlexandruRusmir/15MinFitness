@@ -50,7 +50,10 @@ public class WorkoutExercisesListActivity extends AppCompatActivity {
         startWorkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Exercise exercise = (Exercise) (listView.getItemAtPosition(0));
+                Intent showDetail = new Intent(getApplicationContext(), CurrentWorkingExerciseActivity.class);
+                showDetail.putExtra("id",exercise.getId());
+                startActivity(showDetail);
             }
         });
 
