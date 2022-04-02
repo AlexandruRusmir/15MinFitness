@@ -36,6 +36,7 @@
         android:fontFamily="@font/biorhyme"
         android:text="exercise"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20dp" />
 
     <ImageView

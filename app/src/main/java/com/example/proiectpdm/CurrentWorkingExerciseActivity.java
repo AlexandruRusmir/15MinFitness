@@ -19,17 +19,16 @@ import java.util.Locale;
 public class CurrentWorkingExerciseActivity extends AppCompatActivity {
 
     Exercise selectedExercise;
-    private static final long START_TIME_IN_MILLIS = 5000;
 
+    private static final long START_TIME_IN_MILLIS = 5000;
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
-
+    private Button skipButton;
     private CountDownTimer mCountDownTimer;
-
     private boolean mTimerRunning;
-
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
+    public static int currentId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +38,11 @@ public class CurrentWorkingExerciseActivity extends AppCompatActivity {
         getSelectedExercise();
         setValues();
 
-
         mTextViewCountDown = findViewById(R.id.text_view_countdown);
 
         mButtonStartPause = findViewById(R.id.button_start_pause);
         mButtonReset = findViewById(R.id.button_reset);
+        skipButton = findViewById(R.id.skipButton);
 
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +62,24 @@ public class CurrentWorkingExerciseActivity extends AppCompatActivity {
             }
         });
 
+        skipButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mCountDownTimer.cancel();
+                if(currentId == WorkoutExercisesListActivity.exercises.size()-1){
+                    WorkoutExercisesListActivity.exercises.clear();
+                    Intent intent = new Intent(CurrentWorkingExerciseActivity.this, WorkoutEndActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    currentId = currentId + 1;
+                    Intent intent = new Intent(CurrentWorkingExerciseActivity.this, BreakActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
+        startTimer();
         updateCountDownText();
     }
 
@@ -90,11 +107,13 @@ public class CurrentWorkingExerciseActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                if(WorkoutExercisesListActivity.exercises.isEmpty()){
-                    Intent intent = new Intent(CurrentWorkingExerciseActivity.this, WorkoutExercisesListActivity.class);
+                if(currentId == WorkoutExercisesListActivity.exercises.size()-1){
+                    WorkoutExercisesListActivity.exercises.clear();
+                    Intent intent = new Intent(CurrentWorkingExerciseActivity.this, WorkoutEndActivity.class);
                     startActivity(intent);
                 }
                 else {
+                    currentId = currentId + 1;
                     Intent intent = new Intent(CurrentWorkingExerciseActivity.this, BreakActivity.class);
                     startActivity(intent);
                 }

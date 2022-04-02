@@ -25,7 +25,7 @@ public class StretchActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(StretchActivity.this, WorkoutPage.class);
+                Intent intent = new Intent(StretchActivity.this, WorkoutEndActivity.class);
                 startActivity(intent);
             }
         });

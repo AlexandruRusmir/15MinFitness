@@ -18,11 +18,9 @@ public class BreakActivity extends AppCompatActivity {
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
-
+    private Button skipButton;
     private CountDownTimer mCountDownTimer;
-
     private boolean mTimerRunning;
-
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
 
     @Override
@@ -34,6 +32,7 @@ public class BreakActivity extends AppCompatActivity {
 
         mButtonStartPause = findViewById(R.id.button_start_pause);
         mButtonReset = findViewById(R.id.button_reset);
+        skipButton = findViewById(R.id.skipButton2);
 
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,8 +51,20 @@ public class BreakActivity extends AppCompatActivity {
                 resetTimer();
             }
         });
-
+        startTimer();
         updateCountDownText();
+
+        skipButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mCountDownTimer.cancel();
+
+                Exercise exercise = (Exercise) (WorkoutExercisesListActivity.listView.getItemAtPosition(CurrentWorkingExerciseActivity.currentId));
+                Intent showDetail = new Intent(getApplicationContext(), CurrentWorkingExerciseActivity.class);
+                showDetail.putExtra("id",exercise.getId());
+                startActivity(showDetail);
+            }
+        });
     }
 
     private void startTimer() {
@@ -66,11 +77,10 @@ public class BreakActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                Exercise exercise = (Exercise) (WorkoutExercisesListActivity.listView.getItemAtPosition(1));
+                Exercise exercise = (Exercise) (WorkoutExercisesListActivity.listView.getItemAtPosition(CurrentWorkingExerciseActivity.currentId));
                 Intent showDetail = new Intent(getApplicationContext(), CurrentWorkingExerciseActivity.class);
                 showDetail.putExtra("id",exercise.getId());
                 startActivity(showDetail);
-
             }
         }.start();
 

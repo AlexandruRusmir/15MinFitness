@@ -14,13 +14,14 @@
         android:background="@drawable/btn_bg"
         android:fontFamily="@font/biorhyme"
         android:text="@string/startYourWorkout"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        android:visibility="invisible"
-        tools:visibility="visible"
-        app:layout_constraintTop_toBottomOf="@+id/emptyListButton" />
+        app:layout_constraintTop_toBottomOf="@+id/emptyListButton"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/back_button3"
@@ -54,6 +55,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/biorhyme"
         android:text="@string/yourWorkoutTitle"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/selectedExercisesListView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,6 +74,7 @@
         android:background="@drawable/add_to_workout_btn"
         android:fontFamily="@font/biorhyme"
         android:text="@string/emptyWorkoutList"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectedExercisesListView" />

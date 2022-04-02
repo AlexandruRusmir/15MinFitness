@@ -29,15 +29,6 @@ public class WorkoutPage extends AppCompatActivity {
             }
         });
 
-        stretchButton = findViewById(R.id.stretchesButton);
-        stretchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(WorkoutPage.this, StretchActivity.class);
-                startActivity(intent);
-            }
-        });
-
         bodyweightButton = findViewById(R.id.bodyweightButton);
         bodyweightButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +47,7 @@ public class WorkoutPage extends AppCompatActivity {
             }
         });
 
-        startYourWorkoutButton = findViewById(R.id.startWorkoutButton);
+        startYourWorkoutButton = findViewById(R.id.goBackToMain);
         startYourWorkoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

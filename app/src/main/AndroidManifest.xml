@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProiectPDM">
         <activity
+            android:name=".WorkoutEndActivity"
+            android:exported="false" />
+        <activity
             android:name=".BreakActivity"
             android:exported="false" />
         <activity

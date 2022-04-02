@@ -51,7 +51,13 @@ public class WorkoutExercisesListActivity extends AppCompatActivity {
         startWorkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Exercise exercise = (Exercise) (listView.getItemAtPosition(0));
+                CurrentWorkingExerciseActivity.currentId = 0;
+
+                int initialSize =  exercises.size();
+                for(int i=exercises.size(); i<15; i++)
+                    exercises.add(exercises.get(i-initialSize));
+
+                Exercise exercise = (Exercise) (listView.getItemAtPosition(CurrentWorkingExerciseActivity.currentId));
                 Intent showDetail = new Intent(getApplicationContext(), CurrentWorkingExerciseActivity.class);
                 showDetail.putExtra("id",exercise.getId());
                 startActivity(showDetail);

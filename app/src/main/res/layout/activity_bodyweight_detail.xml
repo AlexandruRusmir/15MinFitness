@@ -36,6 +36,7 @@
         android:fontFamily="@font/biorhyme"
         android:text="exercise"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20dp" />
 
     <ImageView
@@ -59,8 +60,9 @@
         android:layout_marginTop="630dp"
         android:layout_marginEnd="128dp"
         android:background="@drawable/add_to_workout_btn"
-        android:text="@string/addToWorkout"
         android:fontFamily="@font/biorhyme"
+        android:text="@string/addToWorkout"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"

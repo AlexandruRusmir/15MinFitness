@@ -41,37 +41,40 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/all"
-            android:fontFamily="@font/biorhyme"
-            android:background="@drawable/filter_btn_bg"
-            android:layout_margin="4dp"
             android:id="@+id/allFilter"
-            android:onClick="allFilterTapped"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/filter_btn_bg"
+            android:fontFamily="@font/biorhyme"
+            android:onClick="allFilterTapped"
+            android:text="@string/all"
+            android:textColor="@color/black" />
 
         <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/fullbody"
-            android:fontFamily="@font/biorhyme"
-            android:layout_margin="4dp"
-            android:background="@drawable/filter_btn_bg"
             android:id="@+id/fullbodyFilter"
-            android:onClick="fullBodyFilterTapped"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/filter_btn_bg"
+            android:fontFamily="@font/biorhyme"
+            android:onClick="fullBodyFilterTapped"
+            android:text="@string/fullbody"
+            android:textColor="@color/black" />
 
         <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/push"
-            android:fontFamily="@font/biorhyme"
-            android:layout_margin="4dp"
-            android:background="@drawable/filter_btn_bg"
             android:id="@+id/fpushFilter"
-            android:onClick="pushFilterTapped"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/filter_btn_bg"
+            android:fontFamily="@font/biorhyme"
+            android:onClick="pushFilterTapped"
+            android:text="@string/push"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
@@ -79,38 +82,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/pull"
-            android:fontFamily="@font/biorhyme"
-            android:layout_margin="4dp"
-            android:background="@drawable/filter_btn_bg"
             android:id="@+id/pullFilter"
-            android:onClick="pullFilterTapped"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/filter_btn_bg"
+            android:fontFamily="@font/biorhyme"
+            android:onClick="pullFilterTapped"
+            android:text="@string/pull"
+            android:textColor="@color/black" />
 
         <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/legs"
-            android:fontFamily="@font/biorhyme"
-            android:layout_margin="4dp"
-            android:background="@drawable/filter_btn_bg"
             android:id="@+id/legsFilter"
-            android:onClick="legsFilterTapped"/>
-
-        <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="@string/core"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
             android:background="@drawable/filter_btn_bg"
             android:fontFamily="@font/biorhyme"
-            android:layout_margin="4dp"
+            android:onClick="legsFilterTapped"
+            android:text="@string/legs"
+            android:textColor="@color/black" />
+
+        <Button
             android:id="@+id/coreFilter"
-            android:onClick="coreFilterTapped"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/filter_btn_bg"
+            android:fontFamily="@font/biorhyme"
+            android:onClick="coreFilterTapped"
+            android:text="@string/core"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 

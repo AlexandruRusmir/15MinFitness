@@ -7,30 +7,32 @@
     tools:context=".WorkoutPage">
 
     <Button
-        android:id="@+id/startWorkoutButton"
+        android:id="@+id/goBackToMain"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="112dp"
         android:background="@drawable/add_to_workout_btn"
         android:fontFamily="@font/biorhyme"
         android:text="@string/startYourWorkout"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stretchesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/dumbbellButton" />
 
     <Button
         android:id="@+id/bodyweightButton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/bodyweightButton"
+        android:layout_marginTop="52dp"
         android:background="@drawable/btn_bg"
         android:fontFamily="@font/biorhyme"
+        android:text="@string/bodyweightButton"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -42,34 +44,22 @@
         android:fontFamily="cursive"
         android:padding="20dp"
         android:text="@string/startWorkoutMessage"
-        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <Button
-        android:id="@+id/stretchesButton"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/stretching_btn"
-        android:fontFamily="@font/biorhyme"
-        android:text="@string/stretchingButton"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dumbbellButton" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="96dp"
         android:fontFamily="cursive"
         android:padding="20dp"
         android:text="@string/startWorkout"
+        android:textColor="@color/black"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -94,13 +84,14 @@
         android:id="@+id/dumbbellButton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/btn_bg"
         android:fontFamily="@font/biorhyme"
         android:text="@string/dumbbellButton"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bodyweightButton" />
 
